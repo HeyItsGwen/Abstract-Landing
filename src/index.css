@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   padding: 0;
   margin: auto;
@@ -83,6 +87,26 @@ header #navBar ul li a {
   }
 }
 
+.jumbotron #box1 .jumboText {
+  height: 80%;
+  margin: auto;
+  padding: 15px 0;
+}
+
+.jumbotron #box1 .jumboText h1 {
+  margin-left: 15px;
+  font-weight: 600;
+  font-size: 4em;
+  color: white;
+}
+
+.jumbotron #box1 .jumboText p {
+  margin-bottom: 50px;
+  margin-right: 15px;
+  font-style: italic;
+  color: white;
+}
+
 .jumbotron #box2 {
   background-image: url(./images/cyanbg.png);
   background-position: right;
@@ -102,5 +126,26 @@ header #navBar ul li a {
   .jumbotron #box2 {
     background-position-x: bottom;
   }
+}
+
+#about {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0 40px 0;
+  background-image: url(./images/cyanbg.png);
+  -webkit-clip-path: polygon(0 0, 100% 10%, 91% 75%, 2% 87%);
+          clip-path: polygon(0 0, 100% 10%, 91% 75%, 2% 87%);
+}
+
+#about h2 {
+  font-weight: 600;
+}
+
+#about h2:after {
+  content: '';
+  display: block;
+  width: 50%;
+  border-bottom: 2px solid black;
+  margin: auto;
 }
 /*# sourceMappingURL=index.css.map */

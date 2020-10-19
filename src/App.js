@@ -8,7 +8,7 @@ function App() {
 
       <main>
         <Jumbotron />
-        <Products />
+        <About />
       </main>
 
       <footer>
@@ -25,8 +25,9 @@ function Nav() {
     <nav id='navBar'>
       <ul class='d-flex flex-rowmed'>
         <li><a href='#top'>Home</a></li>
-        <li><a href='#products'>Products</a></li>
         <li><a href='#about'>About</a></li>
+        <li><a href='#reviews'>Reviews</a></li>
+        <li><a href='#contact'>Contact</a></li>
       </ul>
     </nav>
   )
@@ -65,12 +66,9 @@ function Jumbotron() {
   return (
     <div class='jumbotron'>
       <div id='box1' class='d-flex justify-content-center align-items-center'>
-        <div class='jumboText'>
-          <h1>It's Your Brand!</h1>
-          <p class='text-left'>Show it off to the world!</p>
-        </div>
-        <div class='jumboImage'>
-          
+        <div class='jumboText d-flex'>
+          <h1 class='align-self-center justify-content-end'>It's Your Brand!</h1>
+          <p class='align-self-end'>Show it off to the world!</p>
         </div>
       </div>
       <div id='box2'></div>
@@ -78,9 +76,10 @@ function Jumbotron() {
   )
 }
 
-function Products() {
+function About() {
   return (
-    <div class='products'>
+    <div id='about' class='d-flex flex-column align-items-center'>
+      <h2>About Us</h2>
     </div>
   )
 }
