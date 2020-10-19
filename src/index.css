@@ -8,6 +8,7 @@ body {
   max-width: 1920px;
   width: 100vw;
   overflow-x: hidden;
+  background-image: url(./images/whitepink.png);
 }
 
 body #root {
@@ -68,7 +69,7 @@ header #navBar ul li a {
 .jumbotron {
   padding: 0;
   max-height: 500px;
-  background-color: white;
+  background-color: transparent;
 }
 
 .jumbotron #box1 {
@@ -105,6 +106,7 @@ header #navBar ul li a {
   margin-right: 15px;
   font-style: italic;
   color: white;
+  font-weight: bold;
 }
 
 .jumbotron #box2 {
@@ -131,21 +133,70 @@ header #navBar ul li a {
 #about {
   width: 90%;
   margin: auto;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 90px 10px;
   background-image: url(./images/cyanbg.png);
-  -webkit-clip-path: polygon(0 0, 100% 10%, 91% 75%, 2% 87%);
-          clip-path: polygon(0 0, 100% 10%, 91% 75%, 2% 87%);
+  -webkit-clip-path: polygon(0 0, 100% 8%, 96% 85%, 2% 92%);
+          clip-path: polygon(0 0, 100% 8%, 96% 85%, 2% 92%);
 }
 
 #about h2 {
   font-weight: 600;
+  padding-top: 15px;
+  color: white;
+  margin-bottom: 10px;
 }
 
 #about h2:after {
   content: '';
   display: block;
   width: 50%;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   margin: auto;
+  margin-top: 10px;
+}
+
+#about .row div img {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  border: 2px solid coral;
+  border-radius: 100px;
+}
+
+#about .row div .imgleft {
+  margin-right: 15px;
+}
+
+#about .row div .imgright {
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+#about .row div span h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  padding-top: 15px;
+  color: white;
+}
+
+#about .row div span p {
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+#about .row2:after {
+  content: '';
+  width: 60%;
+  display: block;
+  margin: 30px auto;
+  border: 1px solid white;
+}
+
+#about .aboutBottomP {
+  font-style: italic;
+  font-size: 1.1em;
+  padding: 0 25px;
 }
 /*# sourceMappingURL=index.css.map */

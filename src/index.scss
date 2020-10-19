@@ -9,6 +9,8 @@ body {
   width: 100vw;
   overflow-x: hidden;
 
+  background-image: url(./images/whitepink.png);
+
   #root {
     margin: 0;
 
@@ -82,7 +84,7 @@ header {
 .jumbotron {
   padding: 0;
   max-height: 500px;
-  background-color: white;
+  background-color: transparent;
 
   #box1 {
     background-image: url(./images/coralbg.png);
@@ -113,6 +115,7 @@ header {
         margin-right: 15px;
         font-style: italic;
         color: white;
+        font-weight: bold;
       }
     }
 
@@ -139,18 +142,75 @@ header {
 #about {
   width: 90%;
   margin: auto;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 90px 10px;
   background-image: url(./images/cyanbg.png);
-  clip-path: polygon(0 0, 100% 10%, 91% 75%, 2% 87%);
+  clip-path: polygon(0 0, 100% 8%, 96% 85%, 2% 92%);
 
   h2 {
     font-weight: 600;
+    padding-top: 15px;
+    color: white;
+    margin-bottom: 10px;
+
     &:after {
       content: '';
       display: block;
       width: 50%;
-      border-bottom: 2px solid black;
+      border-bottom: 2px solid white;
       margin: auto;
+      margin-top: 10px;
     }
+  }
+
+  .row {
+
+    div {
+      
+      img {
+        position: relative;
+        width: 90px;
+        height: 90px;
+        clip-path: circle(50% at 50% 50%);
+        border: 2px solid coral;
+        border-radius: 100px;
+      }
+
+      .imgleft {
+        margin-right: 15px;
+      }
+      .imgright {
+        margin-left: 15px;
+        margin-right: 10px;
+      }
+
+      span {
+        h3 {
+          font-size: 1.3em;
+          font-weight: 600;
+          padding-top: 15px;
+          color: white;
+        }
+        p {
+          max-width: 300px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .row2 {
+    &:after {
+      content: '';
+      width: 60%;
+      display: block;
+      margin: 30px auto;
+      border: 1px solid white;
+    }
+  }
+
+  .aboutBottomP {
+    font-style: italic;
+    font-size: 1.1em;
+    padding: 0 25px;
   }
 }

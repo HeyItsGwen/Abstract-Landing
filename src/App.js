@@ -1,4 +1,8 @@
 import React from 'react';
+import bugs from './images/bugs.jpg';
+import finn from './images/finn.jpg';
+import jake from './images/jake.jpg';
+import glimmer from './images/glimmer.jpg';
 
 function App() {
   return (
@@ -45,17 +49,14 @@ function Socials() {
 
 function Header() {
   return (
-    <header class='d-flex row align-items-center flex-sm-row flex-column'>
-      <div class='col-4 d-flex justify-content-center'>
-        {/* page links on the right */}
+    <header class='d-flex row align-items-center flex-md-row flex-column'>
+      <div class='col-lg-4 col-5 d-flex justify-content-center'>
         <Nav />
       </div>
-      <div class='d-none col-4 d-sm-flex justify-content-center' id='centerLogo'>
-        {/* center logo that disappears on small */}
+      <div class='d-none col-lg-4 col-3 d-md-flex justify-content-center' id='centerLogo'>
         <i class="fab fa-drupal"></i>
       </div>     
-      <div id='socials' class='col-4 d-flex justify-content-center'>
-        {/* something here, store links maybe */}
+      <div id='socials' class='col-lg-4 col-4 d-flex justify-content-center'>
         <Socials />
       </div>
     </header>
@@ -80,6 +81,39 @@ function About() {
   return (
     <div id='about' class='d-flex flex-column align-items-center'>
       <h2>About Us</h2>
+      <div class='row'>
+        <div class='col-12 col-sm-6 d-flex'>
+          <img class='imgleft' src={bugs} alt='bugs bunny'></img>
+          <span>
+            <h3>Name Here</h3>
+            <p>Text info about the person here, that goes on for a while to make it longer</p>
+          </span>
+        </div>
+        <div class='col-12 col-sm-6 d-flex'>
+          <span>
+            <h3 class='text-right'>Name Here</h3>
+            <p class='text-right'>Text info about the person here, that goes on for a while to make it longer</p>
+          </span>
+          <img class='imgright' src={finn} alt='Finn adventure time'></img>
+        </div>
+      </div>
+      <div class='row row2'>
+      <div class='col-12 col-sm-6 d-flex'>
+          <img class='imgleft' src={jake} alt='bugs bunny'></img>
+          <span>
+            <h3>Name Here</h3>
+            <p>Text info about the person here, that goes on for a while to make it longer</p>
+          </span>
+        </div>
+        <div class='col-12 col-sm-6 d-flex'>
+          <span>
+            <h3 class='text-right'>Name Here</h3>
+            <p class='text-right'>Text info about the person here, that goes on for a while to make it longer</p>
+          </span>
+          <img class='imgright' src={glimmer} alt='Finn adventure time'></img>
+        </div>
+      </div>
+      <p class='aboutBottomP'>Let people know what they should love about your team and what you do!</p>
     </div>
   )
 }
