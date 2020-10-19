@@ -1,13 +1,106 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  margin: auto;
+  max-width: 1920px;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body #root {
+  margin: 0;
 }
+
+body #root .App {
+  width: 100vw;
+}
+
+header {
+  width: 100%;
+  padding-top: 15px;
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  padding: 0 15px;
+}
+
+header #socials i {
+  font-size: 2em;
+}
+
+header #socials ul .facebookLogo a {
+  color: blue;
+}
+
+header #socials ul .twitterLogo a {
+  color: #008aca;
+}
+
+header #socials ul .instagramLogo a {
+  color: #a11fa1;
+}
+
+header #centerLogo i {
+  font-size: 4.5em;
+}
+
+@media only screen and (min-width: 568px) {
+  header #navBar ul {
+    padding-left: 25px;
+  }
+}
+
+header #navBar ul li a {
+  color: black;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+.jumbotron {
+  padding: 0;
+  max-height: 500px;
+  background-color: white;
+}
+
+.jumbotron #box1 {
+  background-image: url(./images/coralbg.png);
+  height: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  -webkit-clip-path: polygon(0 7%, 100% 0, 100% 86%, 0 100%);
+  clip-path: polygon(0 7%, 100% 0, 100% 86%, 0 100%);
+}
+
+@media only screen and (max-width: 568px) {
+  .jumbotron #box1 {
+    background-position: right;
+  }
+}
+
+.jumbotron #box2 {
+  background-image: url(./images/cyanbg.png);
+  background-position: right;
+  height: 500px;
+  width: 100%;
+  float: left;
+  position: relative;
+  z-index: 1;
+  top: -500px;
+  margin-bottom: -500px;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 70%);
+  clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 70%);
+}
+
+@media only screen and (max-width: 568px) {
+  .jumbotron #box2 {
+    background-position-x: bottom;
+  }
+}
+/*# sourceMappingURL=index.css.map */

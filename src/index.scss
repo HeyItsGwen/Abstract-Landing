@@ -1,0 +1,116 @@
+body {
+  padding: 0;
+  margin: auto;
+  max-width: 1920px;
+  width: 100vw;
+  overflow-x: hidden;
+
+  #root {
+    margin: 0;
+
+    .App {
+      width: 100vw;
+    }
+  }
+
+}
+
+header {
+  width: 100%;
+  padding-top: 15px;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding: 0 15px;
+    }
+  }
+
+  #socials {
+    i {
+      font-size: 2em;
+    }
+    ul {
+      .facebookLogo {
+        a {
+          color: blue;
+        }
+      }
+      .twitterLogo {
+        a {
+          color: rgb(0, 138, 202);
+        }
+      }
+      .instagramLogo {
+        a {
+          color: rgb(161, 31, 161);
+        }
+      }
+    }
+  }
+
+  #centerLogo {
+    i {
+      font-size: 4.5em;
+    }
+  }
+  
+  #navBar {
+    ul {
+      @media only screen and (min-width:568px) {
+        padding-left: 25px;
+      }
+
+      li {
+        a {
+          color: black;
+          font-size: 1.1em;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+.jumbotron {
+  padding: 0;
+  max-height: 500px;
+  background-color: white;
+
+  #box1 {
+    background-image: url(./images/coralbg.png);
+    height: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    -webkit-clip-path: polygon(0 7%, 100% 0, 100% 86%, 0 100%);
+    clip-path: polygon(0 7%, 100% 0, 100% 86%, 0 100%);
+    @media only screen and (max-width: 568px) {
+      background-position: right;
+    }
+  }
+  #box2 {
+    background-image: url(./images/cyanbg.png);
+    background-position: right;
+    height: 500px;
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 1;
+    top: -500px;
+    margin-bottom: -500px;
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 70%);
+    clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 70%);
+    @media only screen and (max-width: 568px) {
+      background-position-x: bottom;
+    }
+  }
+}
+
+.products {
+  
+}
