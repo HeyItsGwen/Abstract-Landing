@@ -199,4 +199,40 @@ header #navBar ul li a {
   font-size: 1.1em;
   padding: 0 25px;
 }
+
+#reviews {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0 90px 10px;
+}
+
+#reviews #reviewTitle {
+  background-image: url(./images/magentabg.png);
+  padding: 10px 25px 7px 40px;
+  -webkit-clip-path: polygon(9% 0, 89% 26%, 100% 100%, 23% 100%);
+          clip-path: polygon(9% 0, 89% 26%, 100% 100%, 23% 100%);
+  color: white;
+}
+
+#reviews #reviewTitle h2 {
+  font-weight: 600;
+}
+
+#contact {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0 90px 10px;
+}
+
+#contact #contactTitle {
+  background-image: url(./images/magentabg.png);
+  padding: 10px 25px 7px 40px;
+  -webkit-clip-path: polygon(16% 14%, 100% 0, 84% 100%, 3% 100%);
+          clip-path: polygon(16% 14%, 100% 0, 84% 100%, 3% 100%);
+  color: white;
+}
+
+#contact #contactTitle h2 {
+  font-weight: 600;
+}
 /*# sourceMappingURL=index.css.map */

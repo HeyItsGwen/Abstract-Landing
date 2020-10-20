@@ -214,3 +214,37 @@ header {
     padding: 0 25px;
   }
 }
+
+#reviews {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0 90px 10px;
+
+  #reviewTitle {
+    background-image: url(./images/magentabg.png);
+    padding: 10px 25px 7px 40px;
+    clip-path: polygon(9% 0, 89% 26%, 100% 100%, 23% 100%);
+    color: white;
+
+    h2 {
+      font-weight: 600;
+    }
+  }
+}
+
+#contact {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0 90px 10px;
+
+  #contactTitle {
+    background-image: url(./images/magentabg.png);
+    padding: 10px 25px 7px 40px;
+    clip-path: polygon(16% 14%, 100% 0, 84% 100%, 3% 100%);
+    color: white;
+
+    h2 {
+      font-weight: 600;
+    }
+  }
+}

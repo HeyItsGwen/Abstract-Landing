@@ -13,6 +13,8 @@ function App() {
       <main>
         <Jumbotron />
         <About />
+        <Reviews />
+        <Contact />
       </main>
 
       <footer>
@@ -114,6 +116,34 @@ function About() {
         </div>
       </div>
       <p class='aboutBottomP'>Let people know what they should love about your team and what you do!</p>
+    </div>
+  )
+}
+
+function Reviews() {
+  return (
+    <div id='reviews' class='d-flex flex-column align-items-center'>
+      <div id='reviewTitle' class='align-self-end'>
+        <h2>Reviews</h2>
+      </div>
+      <div class='reviewLeft row'>
+        <div class='reviewImg col-12 col-sm-3'></div>
+        <div class='col-12 col-sm-9 reviewText'></div>
+      </div>
+      <div class='reviewRight row'>
+        <div class='col-12 col-sm-9 reviewText'></div>
+        <div class='col-12 col-sm-3 reviewImg'></div>
+      </div>
+    </div>
+  )
+}
+
+function Contact() {
+  return (
+    <div id='contact' class='d-flex flex-column align-items-center'>
+      <div id='contactTitle' class='align-self-start'>
+        <h2>Contact Us</h2>
+      </div>
     </div>
   )
 }
