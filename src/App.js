@@ -3,6 +3,9 @@ import bugs from './images/bugs.jpg';
 import finn from './images/finn.jpg';
 import jake from './images/jake.jpg';
 import glimmer from './images/glimmer.jpg';
+import bubbles from './images/bubbles.jpg';
+import deedee from './images/deedee.jpg';
+import plank from './images/plank.png';
 
 function App() {
   return (
@@ -18,8 +21,9 @@ function App() {
       </main>
 
       <footer>
-
+        <Footer />
       </footer>
+
     </div>
   );
 }
@@ -41,7 +45,7 @@ function Nav() {
 
 function Socials() {
   return (
-    <ul class='d-flex flex-row'>
+    <ul class='d-flex flex-row' id='socials'>
       <li class='facebookLogo'><a href='https://www.facebook.com' target='blank'><i class="fab fa-facebook-square"></i></a></li>
       <li class='twitterLogo'><a href='https://www.twitter.com' target='blank'><i class="fab fa-twitter-square"></i></a></li>
       <li class='instagramLogo'><a href='https://www.instagram.com' target='blank'><i class="fab fa-instagram-square"></i></a></li>
@@ -127,12 +131,34 @@ function Reviews() {
         <h2>Reviews</h2>
       </div>
       <div class='reviewLeft row'>
-        <div class='reviewImg col-12 col-sm-3'></div>
-        <div class='col-12 col-sm-9 reviewText'></div>
+        <div class='reviewImg col-12 col-sm-3 d-flex justify-content-center'>
+          <img src={bubbles} alt='bubbles'></img>
+        </div>
+        <div class='col-12 col-sm-9 reviewText'>
+          <h3>A. Realname</h3>
+          <p class='text-left'>Let the world know what your favorite customers think about you, and your excellent brand, or product.</p>
+          <small>25, F, Pittsburg.</small>
+        </div>
       </div>
       <div class='reviewRight row'>
-        <div class='col-12 col-sm-9 reviewText'></div>
-        <div class='col-12 col-sm-3 reviewImg'></div>
+        <div class='col-12 col-sm-9 reviewText d-flex flex-column align-items-end'>
+          <h3 class='text-right'>A. Realname</h3>
+          <p class='text-right'>Show everyone that it's not just empty words, that people love you and are willing to tell others to love you too.</p>
+          <small class='text-right align-self-end'>32, F, Smallsville</small>
+        </div>
+        <div class='col-12 col-sm-3 reviewImg d-flex justify-content-center'>
+          <img src={deedee} alt='deedee'></img>
+        </div>
+      </div>
+      <div class='reviewLeft row'>
+        <div class='reviewImg col-12 col-sm-3 d-flex justify-content-center'>
+          <img src={plank} alt='plank'></img>
+        </div>
+        <div class='col-12 col-sm-9 reviewText'>
+          <h3>A. Realname</h3>
+          <p class='text-left'>Push them towards your work by reinforcing that you, you company, and what you make are the right choice for them.</p>
+          <small>???, ???, the Culdesac</small>
+        </div>
       </div>
     </div>
   )
@@ -144,6 +170,42 @@ function Contact() {
       <div id='contactTitle' class='align-self-start'>
         <h2>Contact Us</h2>
       </div>
+      <div id='contactBoxes' class='row d-flex justify-content-around'>
+        <div class='col-12 col-sm-5' id='contactSocial'>
+          <h3>Our Social Media Pages</h3>
+          <div id='bottomSocials' class='d-flex flex-column align-items-center'>
+            <Socials />
+          </div>
+        </div>
+        <div class='col-12 col-sm-5 d-flex flex-column align-items-end' id='contactForm'>
+          <h3>Contact us directly!</h3>
+          <p>Email us:</p>
+          <p><a href='https://github.com/HeyItsGwen' target='blank'>YourBrand@email.com</a></p>
+          <p class='topMargin'>Send us a message:</p>
+          <form class='d-flex flex-column align-items-end'>
+            <div class='form-group'>
+              <label for="emailInput">Your Email:</label>
+              <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp"></input>
+              <small id="emailHelp" class="form-text text-muted">Your information is safe with us!</small>
+            </div>
+            <div class='form-group'>
+              <label for="textInput">How can we help?</label>
+              <input type="text" class="form-control" id="textInput"></input>
+            </div>
+            <button class='btn btn-primary'>Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function Footer(){
+  return (
+    <div id='footerDiv' class='d-flex flex-column align-items-center'>
+      <p>Copyright <i class="fas fa-copyright"></i>Your Brand 2020.</p>
+      <p><a class='text-center' href='https://github.com/HeyItsGwen'>YourBrand@email.com</a> | 1(800)555-1234</p>
+      <p class='text-center'>Made with ♥ and <i class="fas fa-coffee"></i> by <a href='https://github.com/HeyItsGwen' target='blank'>Gwen</a></p>
     </div>
   )
 }

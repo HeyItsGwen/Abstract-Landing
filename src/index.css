@@ -9,6 +9,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   background-image: url(./images/whitepink.png);
+  background-size: 85%;
 }
 
 body #root {
@@ -74,6 +75,7 @@ header #navBar ul li a {
 
 .jumbotron #box1 {
   background-image: url(./images/coralbg.png);
+  background-size: 90%;
   height: 500px;
   width: 100%;
   position: relative;
@@ -111,6 +113,7 @@ header #navBar ul li a {
 
 .jumbotron #box2 {
   background-image: url(./images/cyanbg.png);
+  background-size: 90%;
   background-position: right;
   height: 500px;
   width: 100%;
@@ -135,6 +138,7 @@ header #navBar ul li a {
   margin: auto;
   padding: 20px 0 90px 10px;
   background-image: url(./images/cyanbg.png);
+  background-size: 90%;
   -webkit-clip-path: polygon(0 0, 100% 8%, 96% 85%, 2% 92%);
           clip-path: polygon(0 0, 100% 8%, 96% 85%, 2% 92%);
 }
@@ -203,11 +207,12 @@ header #navBar ul li a {
 #reviews {
   width: 90%;
   margin: auto;
-  padding: 20px 0 90px 10px;
+  padding: 20px 0 20px 10px;
 }
 
 #reviews #reviewTitle {
   background-image: url(./images/magentabg.png);
+  background-size: 85%;
   padding: 10px 25px 7px 40px;
   -webkit-clip-path: polygon(9% 0, 89% 26%, 100% 100%, 23% 100%);
           clip-path: polygon(9% 0, 89% 26%, 100% 100%, 23% 100%);
@@ -218,14 +223,74 @@ header #navBar ul li a {
   font-weight: 600;
 }
 
+#reviews .reviewLeft, #reviews .reviewRight {
+  width: 80%;
+  margin: 20px 0;
+  padding: 35px 25px 40px 25px;
+}
+
+#reviews .reviewLeft div img, #reviews .reviewRight div img {
+  margin: 10px;
+}
+
+#reviews .reviewLeft div h3, #reviews .reviewRight div h3 {
+  color: white;
+  font-weight: 600;
+}
+
+#reviews .reviewLeft div small, #reviews .reviewRight div small {
+  padding-bottom: 20px;
+  color: white;
+}
+
+#reviews .reviewLeft {
+  background-image: url("./images/coralbg.png");
+  -webkit-clip-path: polygon(0 0, 89% 8%, 100% 100%, 4% 91%);
+          clip-path: polygon(0 0, 89% 8%, 100% 100%, 4% 91%);
+}
+
+#reviews .reviewLeft div h3:after {
+  display: block;
+  content: '';
+  width: 20%;
+  border: 1px solid white;
+}
+
+#reviews .reviewLeft div img {
+  -webkit-clip-path: polygon(83% 0, 100% 50%, 81% 100%, 0% 100%, 16% 50%, 0% 0%);
+          clip-path: polygon(83% 0, 100% 50%, 81% 100%, 0% 100%, 16% 50%, 0% 0%);
+  max-width: 100px;
+}
+
+#reviews .reviewRight {
+  background-image: url("./images/cyanbg.png");
+  -webkit-clip-path: polygon(5% 14%, 100% 0, 96% 92%, 0% 100%);
+          clip-path: polygon(5% 14%, 100% 0, 96% 92%, 0% 100%);
+}
+
+#reviews .reviewRight div h3:after {
+  display: block;
+  content: '';
+  width: 50%;
+  margin-left: 50%;
+  border: 1px solid white;
+}
+
+#reviews .reviewRight div img {
+  -webkit-clip-path: polygon(100% 0%, 81% 50%, 100% 100%, 14% 99%, 0% 50%, 14% 0);
+          clip-path: polygon(100% 0%, 81% 50%, 100% 100%, 14% 99%, 0% 50%, 14% 0);
+  max-width: 100px;
+}
+
 #contact {
-  width: 90%;
+  width: 100%;
   margin: auto;
   padding: 20px 0 90px 10px;
 }
 
 #contact #contactTitle {
   background-image: url(./images/magentabg.png);
+  background-size: 85%;
   padding: 10px 25px 7px 40px;
   -webkit-clip-path: polygon(16% 14%, 100% 0, 84% 100%, 3% 100%);
           clip-path: polygon(16% 14%, 100% 0, 84% 100%, 3% 100%);
@@ -234,5 +299,112 @@ header #navBar ul li a {
 
 #contact #contactTitle h2 {
   font-weight: 600;
+}
+
+#contact #contactBoxes {
+  width: 90%;
+  max-width: 1000px;
+}
+
+#contact #contactBoxes #contactSocial {
+  background-image: url(./images/cyanbg.png);
+  margin: 25px 0;
+  -webkit-clip-path: polygon(0 0, 89% 8%, 95% 94%, 0 100%);
+          clip-path: polygon(0 0, 89% 8%, 95% 94%, 0 100%);
+  padding: 40px 15px;
+  max-height: 200px;
+}
+
+#contact #contactBoxes #contactSocial #bottomSocials {
+  margin-top: 30px;
+}
+
+#contact #contactBoxes #contactSocial h3 {
+  color: white;
+}
+
+#contact #contactBoxes #contactSocial h3:after {
+  display: block;
+  content: '';
+  width: 35%;
+  border: 1px solid white;
+  margin-top: 7px;
+}
+
+#contact #contactBoxes #contactSocial ul {
+  list-style-type: none;
+  padding: 0;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  left: -20px;
+}
+
+#contact #contactBoxes #contactSocial ul .facebookLogo a {
+  color: blue;
+}
+
+#contact #contactBoxes #contactSocial ul .twitterLogo a {
+  color: #008aca;
+}
+
+#contact #contactBoxes #contactSocial ul .instagramLogo a {
+  color: #a11fa1;
+}
+
+#contact #contactBoxes #contactSocial ul li a {
+  color: black;
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+#contact #contactBoxes #contactSocial i {
+  font-size: 2em;
+}
+
+#contact #contactBoxes #contactForm {
+  background-image: url(./images/coralbg.png);
+  margin: 25px 0;
+  -webkit-clip-path: polygon(8% 9%, 100% 0, 100% 100%, 5% 95%);
+          clip-path: polygon(8% 9%, 100% 0, 100% 100%, 5% 95%);
+  padding: 40px 25px 10px 25px;
+}
+
+#contact #contactBoxes #contactForm .topMargin {
+  margin-top: 15px;
+}
+
+#contact #contactBoxes #contactForm h3 {
+  color: white;
+}
+
+#contact #contactBoxes #contactForm h3:after {
+  display: block;
+  content: '';
+  width: 50%;
+  margin-left: 50%;
+  border: 1px solid white;
+  margin-top: 7px;
+}
+
+#contact #contactBoxes #contactForm p {
+  margin-bottom: 0;
+}
+
+label {
+  color: white;
+}
+
+footer #footerDiv {
+  width: 100%;
+}
+
+footer #footerDiv p {
+  margin: 0;
+  font-size: 0.8em;
 }
 /*# sourceMappingURL=index.css.map */

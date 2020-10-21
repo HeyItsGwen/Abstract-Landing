@@ -10,6 +10,7 @@ body {
   overflow-x: hidden;
 
   background-image: url(./images/whitepink.png);
+  background-size: 85%;
 
   #root {
     margin: 0;
@@ -88,6 +89,7 @@ header {
 
   #box1 {
     background-image: url(./images/coralbg.png);
+    background-size: 90%;
     height: 500px;
     width: 100%;
     position: relative;
@@ -122,6 +124,7 @@ header {
   }
   #box2 {
     background-image: url(./images/cyanbg.png);
+    background-size: 90%;
     background-position: right;
     height: 500px;
     width: 100%;
@@ -144,6 +147,7 @@ header {
   margin: auto;
   padding: 20px 0 90px 10px;
   background-image: url(./images/cyanbg.png);
+  background-size: 90%;
   clip-path: polygon(0 0, 100% 8%, 96% 85%, 2% 92%);
 
   h2 {
@@ -218,10 +222,11 @@ header {
 #reviews {
   width: 90%;
   margin: auto;
-  padding: 20px 0 90px 10px;
+  padding: 20px 0 20px 10px;
 
   #reviewTitle {
     background-image: url(./images/magentabg.png);
+    background-size: 85%;
     padding: 10px 25px 7px 40px;
     clip-path: polygon(9% 0, 89% 26%, 100% 100%, 23% 100%);
     color: white;
@@ -230,21 +235,194 @@ header {
       font-weight: 600;
     }
   }
+  .reviewLeft,.reviewRight {
+    width: 80%;
+    margin: 20px 0;
+    padding: 35px 25px 40px 25px;
+
+    div {
+
+      img {
+        margin: 10px;
+      }
+      h3{
+        color: white;
+        font-weight: 600;
+      }
+      small{
+        padding-bottom: 20px;
+        color: white;
+      }
+    }
+  }
+
+  .reviewLeft {
+    background-image: url('./images/coralbg.png');
+    clip-path: polygon(0 0, 89% 8%, 100% 100%, 4% 91%);
+
+    div {
+
+      h3 {
+        &:after {
+          display: block;
+          content: '';
+          width: 20%;
+          border: 1px solid white;
+        }
+      }
+      
+      img {
+        clip-path: polygon(83% 0, 100% 50%, 81% 100%, 0% 100%, 16% 50%, 0% 0%);
+        max-width: 100px;
+      }
+    }
+  }
+  .reviewRight {
+    background-image: url('./images/cyanbg.png');
+    clip-path: polygon(5% 14%, 100% 0, 96% 92%, 0% 100%);
+
+    div {
+
+      h3 {
+        
+        &:after {
+          display: block;
+          content: '';
+          width: 50%;
+          margin-left: 50%;
+          border: 1px solid white;
+        }
+      }
+
+      img {
+        clip-path: polygon(100% 0%, 81% 50%, 100% 100%, 14% 99%, 0% 50%, 14% 0);
+        max-width: 100px;
+      }
+    }
+  }
 }
 
 #contact {
-  width: 90%;
+  width: 100%;
   margin: auto;
   padding: 20px 0 90px 10px;
 
   #contactTitle {
     background-image: url(./images/magentabg.png);
+    background-size: 85%;
     padding: 10px 25px 7px 40px;
     clip-path: polygon(16% 14%, 100% 0, 84% 100%, 3% 100%);
     color: white;
 
     h2 {
       font-weight: 600;
+    }
+  }
+
+  #contactBoxes {
+    width: 90%;
+    max-width: 1000px;
+
+    #contactSocial {
+      background-image: url(./images/cyanbg.png);
+      margin: 25px 0;
+      clip-path: polygon(0 0, 89% 8%, 95% 94%, 0 100%);
+      padding: 40px 15px;
+      max-height: 200px;
+
+      #bottomSocials {
+        margin-top: 30px;
+      }
+
+      h3 {
+        color: white;
+
+        &:after {
+          display: block;
+          content: '';
+          width: 35%;
+          border: 1px solid white;
+          margin-top: 7px;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        left: -20px;
+
+        .facebookLogo {
+          a {
+            color: blue;
+          }
+        }
+        .twitterLogo {
+          a {
+            color: rgb(0, 138, 202);
+          }
+        }
+        .instagramLogo {
+          a {
+            color: rgb(161, 31, 161);
+          }
+        }
+
+        li {
+          a {
+            color: black;
+            font-size: 1.1em;
+            font-weight: 600;
+          }
+        }
+      }
+
+      i {
+        font-size: 2em;
+      }
+    }
+    #contactForm {
+      background-image: url(./images/coralbg.png);
+      margin: 25px 0;
+      clip-path: polygon(8% 9%, 100% 0, 100% 100%, 5% 95%);
+      padding: 40px 25px 10px 25px;
+
+      .topMargin {
+        margin-top: 15px;
+      }
+      h3 {
+        color: white;
+
+        &:after {
+          display: block;
+          content: '';
+          width: 50%;
+          margin-left: 50%;
+          border: 1px solid white;
+          margin-top: 7px;
+        }
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+label {
+  color: white;
+}
+
+footer {
+  #footerDiv {
+    width: 100%;
+
+    p{
+      margin: 0;
+      font-size: 0.8em;
     }
   }
 }
